@@ -41,3 +41,22 @@ int exponentialSearch(int arr[], int n, int key)
     return linearSearch(arr, int (i/2), n, key);
     //return binarySearch(arr, int (i/2), min(i, n-1), key);
 }
+int main()
+{
+    int t;
+    cin>>t;
+    for(int i=0; i<t; i++)
+    {
+        int n, j;
+        cin>>n;
+        int arr[n];
+        for(j=0; j<n; j++)
+        {
+            cin>>arr[j];
+        }
+        int key;
+        cin>>key;
+        int output= exponentialSearch(arr, n, key);
+        (output==-1)? cout<<"Element not Present "<<j : cout<<"Element present at index "<<output+1;
+    }
+}
