@@ -1,13 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void swap(int *a, int *b)
-{
-    int temp=*a;
-    *a=*b;
-    *b=temp;
-}
-
 void selectionSort(int arr[], int n)
 {
     int c=0, s=0, min_idx;
